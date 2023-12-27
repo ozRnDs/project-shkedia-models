@@ -1,3 +1,7 @@
+- [Overview](#overview)
+- [Models](#models)
+
+
 # Overview
 
 The project manages diverse data. This module is design to keep all the services updated with the same data structures (from now on would be referred as models).  
@@ -12,3 +16,4 @@ Each model represent an object in our system. The user or the system can interac
 4. InsightEngine - Describes the types of filter/properties/information we can extract from image. These are the system filters (by date, by object, by face, etc)
 5. Insight (Property) - Describes specific Property found in a specific image
 6. InsightJob - Describes the images that were analyzed using insight engines
+7. Collection - Describes collections of media

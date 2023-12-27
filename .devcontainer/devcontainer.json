@@ -4,6 +4,6 @@
         "context": "../"
     },
     "forwardPorts": [5000],
-    "runArgs": [ "-v", "${localEnv:POSTGRES_CRED_LOCATION}/:/temp/", "-p", "25000:5000"],
+    "runArgs": [ "-v", "${localEnv:POSTGRES_CRED_LOCATION}/:/temp/","-v", "${localEnv:AWS_CRED_LOCATION}/:/root/.aws","-p", "25000:5000"],
     "shutdownAction": "stopContainer"
 }
