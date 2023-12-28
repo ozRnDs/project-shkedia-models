@@ -1,3 +1,13 @@
+## 0.2.0 (2023-12-28)
+
+### Feat
+
+- **jobs**: Adding jobs related models
+
+### Refactor
+
+- **media/MediaIDs**: Move upload_status field to MediaIDs from the MediaDevice
+
 ## 0.1.0 (2023-12-27)
 
 ### Feat
