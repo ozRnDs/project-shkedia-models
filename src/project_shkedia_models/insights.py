@@ -43,6 +43,7 @@ class InsightEngine(InsightEngineBasic):
 class InsightBasic(BaseModel):
     id: str = Field(default_factory=lambda:str(uuid4()))
     insight_engine_id: str
+    job_id: str
     media_id: str
     name: str
     status: InsightStatusEnum = InsightStatusEnum.PREDICTED
