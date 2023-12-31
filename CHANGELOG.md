@@ -1,3 +1,9 @@
+## 0.3.0 (2023-12-31)
+
+### Feat
+
+- **insights**: Add job_id to InsightBasic
+
 ## 0.2.0 (2023-12-28)
 
 ### Feat
