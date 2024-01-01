@@ -1,3 +1,9 @@
+## 0.3.1 (2024-01-01)
+
+### Fix
+
+- **jobs**: Fix start_time default lambda. Add field_serializer to return isoformat
+
 ## 0.3.0 (2023-12-31)
 
 ### Feat
