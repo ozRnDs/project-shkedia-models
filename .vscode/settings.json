@@ -6,6 +6,6 @@
     "python.testing.unittestEnabled": false,
     "python.testing.pytestEnabled": true,
     "python.analysis.extraPaths": [
-        "./models"
+        "./src/project_shkedia_models"
     ]
 }
