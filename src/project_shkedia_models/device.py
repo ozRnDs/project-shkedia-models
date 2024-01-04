@@ -14,7 +14,7 @@ class Device(BaseModel):
     created_on: datetime = Field(default_factory=lambda:datetime.now().isoformat())
     status: str = "ACTIVE"
 
-    @field_serializer('create_on')
+    @field_serializer('created_on')
     def serialize_dates(self,field_value: datetime):
         if field_value:
             return field_value.isoformat()
