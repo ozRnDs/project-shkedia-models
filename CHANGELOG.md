@@ -1,3 +1,9 @@
+## 0.4.3 (2024-01-04)
+
+### Fix
+
+- **device**: Fix typo in field_serializer field name
+
 ## 0.4.2 (2024-01-04)
 
 ### Fix
