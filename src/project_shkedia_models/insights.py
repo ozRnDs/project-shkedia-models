@@ -11,6 +11,7 @@ class InsightEngineStatus(str, Enum):
 class InsightEngineObjectEnum(str, Enum):
     InsightEngineBasic="InsightEngineBasic"
     InsightEngine="InsightEngine"
+    InsightEngineValues="InsightEngineValues"
 
 class InsightObjectEnum(str, Enum):
     InsightBasic="InsightBasic"
@@ -29,6 +30,9 @@ class InsightEngineBasic(BaseModel):
     class Config:
         use_enum_values = True
         validate_assignment = True
+
+class InsightEngineValues(InsightEngineBasic):
+    insights: List[str]
 
 class InsightEngine(InsightEngineBasic):
     description: str
