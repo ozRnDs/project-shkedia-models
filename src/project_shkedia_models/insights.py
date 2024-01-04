@@ -32,7 +32,7 @@ class InsightEngineBasic(BaseModel):
         validate_assignment = True
 
 class InsightEngineValues(InsightEngineBasic):
-    insights: List[str] = []
+    insights_names: List[str] = []
 
 class InsightEngine(InsightEngineBasic):
     description: str
