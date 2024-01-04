@@ -50,7 +50,7 @@ class MediaDevice(MediaIDs):
     device_media_uri: str
     media_status_on_device: MediaDeviceStatus = MediaDeviceStatus.EXISTS
 
-class MediaThumbnail(MediaIDs):
+class MediaThumbnail(MediaMetadata, MediaDevice):
     media_thumbnail: str | None = None
     media_thumbnail_width: int | None = None
     media_thumbnail_height: int | None = None
