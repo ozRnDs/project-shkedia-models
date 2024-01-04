@@ -1,3 +1,9 @@
+## 0.4.4 (2024-01-04)
+
+### Fix
+
+- **collection.CollectionPreview**: Add media_key to decrypt the thumbnail
+
 ## 0.4.3 (2024-01-04)
 
 ### Fix
