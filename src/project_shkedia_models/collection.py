@@ -15,3 +15,4 @@ class CollectionBasic(BaseModel):
 class CollectionPreview(CollectionBasic):
     media_list: List[str] = []
     thumbnail: str | None = None
+    media_key: str | None = None
