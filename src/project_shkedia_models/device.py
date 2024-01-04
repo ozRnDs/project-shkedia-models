@@ -1,4 +1,4 @@
-from pydantic import BaseModel, Field
+from pydantic import BaseModel, Field, field_serializer
 from typing import Union
 from uuid import uuid4
 from datetime import datetime
@@ -13,3 +13,9 @@ class Device(BaseModel):
     owner_id: str
     created_on: datetime = Field(default_factory=lambda:datetime.now().isoformat())
     status: str = "ACTIVE"
+
+    @field_serializer('create_on')
+    def serialize_dates(self,field_value: datetime):
+        if field_value:
+            return field_value.isoformat()
+        return None

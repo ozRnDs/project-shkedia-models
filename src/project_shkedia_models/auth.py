@@ -9,10 +9,10 @@ class Token(BaseModel):
         if self.token_header:
             return {"Authorization": self.token_header}
         return {"Authorization": self.get_token_as_string()}
-    
+
     def get_token_as_string(self):
         return self.token_type + " " + self.access_token
-    
+
     @staticmethod
     def from_token_header(token_header: str):
         token_type = token_header.split(" ")[0]

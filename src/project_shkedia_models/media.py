@@ -1,4 +1,4 @@
-from pydantic import BaseModel, Field
+from pydantic import BaseModel, Field, field_serializer
 from uuid import uuid4
 from datetime import datetime
 
@@ -32,6 +32,12 @@ class MediaIDs(BaseModel):
     media_name: str
     media_type: MediaTypeEnum
     upload_status: MediaUploadStatus = MediaUploadStatus.PENDING
+
+    @field_serializer('created_on')
+    def serialize_dates(self,field_value: datetime):
+        if field_value:
+            return field_value.isoformat()
+        return None
 
 class MediaMetadata(MediaIDs):
     media_size_bytes: int
