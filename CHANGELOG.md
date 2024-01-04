@@ -1,3 +1,13 @@
+## 0.5.0 (2024-01-04)
+
+### Feat
+
+- **SearchResult**: Add property number_of_pages
+
+### Fix
+
+- **media**: Change MediaThumbnail to inherate from both MediaDevice and MediaMetadata
+
 ## 0.4.4 (2024-01-04)
 
 ### Fix
