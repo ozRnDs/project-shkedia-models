@@ -30,10 +30,6 @@ class InsightEngineBasic(BaseModel):
         use_enum_values = True
         validate_assignment = True
 
-class InsightEngine(BaseModel):
-    insights: List[str]
-    
-
 class InsightEngine(InsightEngineBasic):
     description: str
     input_source: str
