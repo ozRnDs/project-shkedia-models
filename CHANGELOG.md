@@ -1,3 +1,9 @@
+## 0.3.2 (2024-01-04)
+
+### Fix
+
+- **device,media,user,token**: Rename token.py to auth.py. Add to all the timedate fields serializer to str
+
 ## 0.3.1 (2024-01-01)
 
 ### Fix
