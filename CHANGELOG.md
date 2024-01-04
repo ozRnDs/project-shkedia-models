@@ -1,3 +1,9 @@
+## 0.4.2 (2024-01-04)
+
+### Fix
+
+- **insights**: Change InsightEngineValues field name from insights to insights_names
+
 ## 0.4.1 (2024-01-04)
 
 ### Fix
