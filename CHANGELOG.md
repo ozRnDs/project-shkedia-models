@@ -1,3 +1,13 @@
+## 0.3.3 (2024-01-04)
+
+### Fix
+
+- **jobs,media**: Serialize InsightJob.net_time_seconds, MediaRequest.create_on
+
+### Refactor
+
+- **insights**: Delete duplicate definition for InsightEngine
+
 ## 0.3.2 (2024-01-04)
 
 ### Fix
