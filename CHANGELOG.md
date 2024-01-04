@@ -1,3 +1,9 @@
+## 0.4.0 (2024-01-04)
+
+### Feat
+
+- **insights**: Add InsightEngineValues object
+
 ## 0.3.3 (2024-01-04)
 
 ### Fix
