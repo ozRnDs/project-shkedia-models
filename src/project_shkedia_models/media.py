@@ -77,6 +77,12 @@ class MediaRequest(BaseModel):
     device_media_uri: str
     exif: str | None = None
 
+    @field_serializer('created_on')
+    def serialize_dates(self,field_value: datetime):
+        if field_value:
+            return field_value.isoformat()
+        return None
+
 class MediaResponse(MediaRequest):
     media_id: str = Field(default_factory=lambda:str(uuid4()))
     upload_status: MediaUploadStatus = MediaUploadStatus.PENDING

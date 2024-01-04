@@ -1,7 +1,7 @@
 from pydantic import BaseModel, Field, field_serializer
 from typing import Union, TypeVar, Type, List
 from uuid import uuid4
-from datetime import datetime
+from datetime import datetime, timedelta
 
 from enum import Enum
 
@@ -20,7 +20,7 @@ class InsightJob(BaseModel):
     end_time: datetime | None = None
     net_time_seconds: datetime | None = None
 
-    @field_serializer('start_time',"end_time")
+    @field_serializer('start_time',"end_time", "net_time_seconds")
     def serialize_dates(self,field_value: datetime):
         if field_value:
             return field_value.isoformat()
