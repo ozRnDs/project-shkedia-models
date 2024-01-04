@@ -1,3 +1,9 @@
+## 0.4.1 (2024-01-04)
+
+### Fix
+
+- **insights**: Set default for InsightEngineValues.insights = []
+
 ## 0.4.0 (2024-01-04)
 
 ### Feat
