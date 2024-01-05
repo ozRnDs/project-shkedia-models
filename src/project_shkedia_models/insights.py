@@ -46,6 +46,7 @@ class InsightBasic(BaseModel):
     job_id: str
     media_id: str
     name: str
+    prob: float | None = None
     status: InsightStatusEnum = InsightStatusEnum.PREDICTED
 
     class Config:
