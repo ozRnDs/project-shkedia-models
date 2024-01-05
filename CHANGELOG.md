@@ -1,3 +1,9 @@
+## 0.6.0 (2024-01-05)
+
+### Feat
+
+- **insights**: Add prob field to InsightBasic
+
 ## 0.5.0 (2024-01-04)
 
 ### Feat
