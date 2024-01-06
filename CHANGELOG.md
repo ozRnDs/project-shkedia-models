@@ -1,3 +1,10 @@
+## 0.6.1 (2024-01-06)
+
+### Fix
+
+- **User**: Return string without serialization
+- **Token,MediaThumbnail**: Add hash function to object
+
 ## 0.6.0 (2024-01-05)
 
 ### Feat
