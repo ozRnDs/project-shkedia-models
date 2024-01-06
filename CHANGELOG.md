@@ -1,3 +1,9 @@
+## 0.7.0 (2024-01-06)
+
+### Feat
+
+- **media**: Add Media type. It includes all the fields for media
+
 ## 0.6.1 (2024-01-06)
 
 ### Fix
