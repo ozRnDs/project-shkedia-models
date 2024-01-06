@@ -10,6 +10,9 @@ class Token(BaseModel):
             return {"Authorization": self.token_header}
         return {"Authorization": self.get_token_as_string()}
 
+    def __hash__(self) -> int:
+        return self.access_token.__hash__()
+
     def get_token_as_string(self):
         return self.token_type + " " + self.access_token
 

@@ -56,6 +56,9 @@ class MediaThumbnail(MediaMetadata, MediaDevice):
     media_thumbnail_height: int | None = None
     media_key: str | None = None
 
+    def __hash__(self) -> int:
+        return self.media_id.__hash__() # or self.id.__hash__()
+
 class MediaStorage(MediaIDs):
     storage_service_name: str | None = None
     storage_bucket_name: str | None = None
