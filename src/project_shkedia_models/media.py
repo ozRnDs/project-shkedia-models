@@ -23,6 +23,7 @@ class MediaObjectEnum(str,Enum):
     MediaStorage = "MediaStorage"
     MediaMetadata = "MediaMetadata"
     MediaDevice = "MediaDevice"
+    Media = "Media"
 
 class MediaIDs(BaseModel):
     media_id: str = Field(default_factory=lambda:str(uuid4()))
@@ -64,6 +65,9 @@ class MediaStorage(MediaIDs):
     storage_bucket_name: str | None = None
     storage_media_uri: str | None = None
     media_key: str | None = None
+
+class Media(MediaStorage,MediaThumbnail):
+    pass
 
 class MediaRequest(BaseModel):
     media_name: str
