@@ -9,6 +9,8 @@ class User(BaseModel):
 
     @field_serializer('created_on')
     def serialize_dates(self,field_value: datetime):
+        if type(field_value)==str:
+            return field_value
         if field_value:
             return field_value.isoformat()
         return None
