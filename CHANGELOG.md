@@ -1,3 +1,9 @@
+## 0.8.0 (2024-01-07)
+
+### Feat
+
+- **message**: Add new classes to manage the queues communication
+
 ## 0.7.0 (2024-01-06)
 
 ### Feat
